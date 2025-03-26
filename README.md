@@ -144,7 +144,10 @@ sudo systemctl status nginx
 
    ```bash
    # 进入项目目录
-   cd /path/to/Equipment_Send
+   cd /var/www/html/Equipment_Send
+
+   # 添加权限
+   sudo chown -R iot:iot /var/www/html/Equipment_Send
 
    # 安装依赖
    npm install
